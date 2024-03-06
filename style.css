@@ -1,0 +1,181 @@
+*{
+   
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(241, 37%, 26%);    
+    padding: 50px;
+    margin: 0;
+}
+
+.caja{
+    width: auto;
+    position: relative;
+    margin:0 auto;
+    font-size-adjust: 15px;
+    }
+
+nav{
+    position: absolute;
+    top: 115px;
+    right: 10px;}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 35px;
+    font-size: 20px;
+    color: #f3f3f3;
+
+}
+
+nav a{
+    text-transform:uppercase;
+    color: #f3f3f3;
+    font-weight: bold;
+    font-size: 50px;
+   
+}
+
+nav a:hover{
+    color: #4a8ee7;
+ }
+
+.productos{
+    display: relative;
+    width: auto;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 25px;
+}
+
+.productos li:hover{
+    border-color: #4a8ee7;    
+}
+
+.productos li:active{
+    border-color: green;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos-descripcion{
+    font-size: 18px;
+}
+.productos-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer{
+    background-color: hsl(241, 37%, 26%);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+}
+    
+.copyright{
+    color:aliceblue;
+    font-size: 12px;   
+    margin: 20px;  
+}
+
+main{
+    width: auto;
+    margin: 0 auto;
+}
+
+form{
+    margin: 100px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    padding: 10px 0px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 6px 5px;
+    width: 50%;
+}
+
+.focus {
+    outline: 1px solid rgb(56, 62, 151);
+}
+
+.checkbox{
+    margin: 30px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(56, 62, 151);
+    border: none;
+    border-radius: 10px; 
+    transition:1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(26, 38, 88);
+    transform: scale(1.10)  ;
+}
+
+
+table{
+    margin:40px 40px
+}
+
+thead{
+    background: hsl(242, 43%, 35%);
+    color:white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+
+@media screen and (max-width:412px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    .caja, .principal, .diferenciales{
+        width:auto;
+    }
+}

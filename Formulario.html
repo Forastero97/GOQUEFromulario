@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle>Formulario de informacion para nuevo agente</tittle>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">     
+
+     </head>
+     <body>
+        <header>
+            <div class="caja">              
+                <h1><img src="LogoGOQUEblanco.png"></h1>
+                <nav>
+                  <ul>
+                      <li><a href="https://www.grupogoque.com/">Inicio GOQUE</a></li>                     
+                  </ul>   
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form action="https://formsubmit.co/nelguadamuz@gmail.com" method="post">
+                <label for="name"> Nombre y Apellido </label>
+                <input type= "Text" id="name" class="input-padron" name="name" required>
+
+                <label for="correoElectronico"> Correo Electronico </label>
+                <input type= "Text" id="correoElectronico" class="input-padron" name="email" required  placeholder="email@dominion.com">
+
+                <label for="telefono"> Telefono </label>
+                <input type= "Text" id="telefono" class="input-padron" name= "telefono" required placeholder="(xxx) xxxx-xxxx">
+
+                <label for="mensaje"> Mensaje </label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+  
+
+                <legend class="test" id="test">¿Como le gustaria que lo contactemos?</legend>
+
+                <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono" id="radio-telefono"> Telefono </label>
+               
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked> Whatsapp </label>
+                
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email </label>            
+               
+
+                                  
+                <label class="checkbox"><input type="checkbox" checked> Le gustaria recibir novedades de la Barberia Alura?</label>
+
+
+                <input type="submit"  value= "Enviar formulario" class="enviar"> 
+
+                <input type="hidden" name="_next" value="https://localhost:8000">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+    
+
+               
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario de oficinas</th>  
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00 - 17:00</td>  
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08:00 - 17:00</td>  
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00 - 17:00</td>  
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08:00 - 17:00</td>  
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00 - 17:00</td>  
+                    </tr>
+                    
+                </tbody>              
+                
+            </table>        `
+
+
+        <footer> 
+            <img src="LogoGOQUEblanco.png" alt="Logo GOQUE"></img>
+            <p class="copyright">&copy Copyright GOQUE-2024</p>
+        </footer>
+
+     </body>
+
+</html>
